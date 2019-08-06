@@ -1,3 +1,6 @@
+swapping out hdd to ssd usually requires AHCI support, just changing it in bios leads to "no operating system found"
+workaround:
+
 open regedit as administrator
 navigate to HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\storahci\StartOverride
 set "0" REG_DWORD to 0 (from 3 or other)
